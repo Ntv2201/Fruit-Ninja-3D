@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7597071212469244950}
+  - component: {fileID: 3402505366694557188}
   - component: {fileID: 7362945325872697531}
   - component: {fileID: 8211587760240505411}
   m_Layer: 0
@@ -35,6 +36,20 @@ Transform:
   - {fileID: 2563135605218116984}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3402505366694557188
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7645020235856720236}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b301934d9de37704fa41779dffc5ca07, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Fruit
+  whole: {fileID: 7202640888247282391}
+  sliced: {fileID: 2943602549025857474}
 --- !u!54 &7362945325872697531
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -267,6 +282,11 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 2, y: 1.8, z: 1.0000004}
   m_Center: {x: -0.00000022351742, y: 0.000000014901172, z: 0.50000024}
+--- !u!1 &2943602549025857474 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 9059e02c871751e44b5abcfd6b2e3f8c, type: 3}
+  m_PrefabInstance: {fileID: 2601021464598798995}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &8013454511817611142
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -328,6 +348,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c1e77409ae2e27d48955182ad2b8f7b9, type: 3}
+--- !u!1 &7202640888247282391 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: c1e77409ae2e27d48955182ad2b8f7b9, type: 3}
+  m_PrefabInstance: {fileID: 8013454511817611142}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &7547816468824371309 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: c1e77409ae2e27d48955182ad2b8f7b9, type: 3}
