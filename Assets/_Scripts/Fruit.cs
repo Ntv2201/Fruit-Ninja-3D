@@ -11,6 +11,7 @@ public class Fruit : MonoBehaviour
     private Rigidbody fruitRigidbody;
     private Collider fruitCollider;
     private ParticleSystem juiceParticle;
+    public int points = 1;
 
     private void Awake()
     {
@@ -21,6 +22,8 @@ public class Fruit : MonoBehaviour
 
     private void Slice(Vector3 direction, Vector3 position, float force)
     {
+        FindAnyObjectByType<GameManager>().IncreaseScore(points);
+
         whole.SetActive(false);
         sliced.SetActive(true);
 
